@@ -17,28 +17,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/style/index.css" />
   </head>
   <body>
     <header>
       <a href="/">CSS Day</a>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="speakers.html">Speakers</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <img src="./icon/shopping-cart.svg" alt="Shopping cart" />
-      </div>
+      <nav>
+        <ul>
+          <li class="nav__list_item"><a href="#">About</a></li>
+          <li class="nav__list_item"><a href="speakers.html">Speakers</a></li>
+          <li class="nav__list_item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="./icon/shopping-cart.svg" alt="Shopping cart" />
     </header>
-    <main>
-      <p>CSS Day is a conference for developers who love beautiful websites.</p>
-      <p>4-8 June 2023</p>
-      <button>
-        Buy Tickets <img src="./icon/arrow-right.svg" alt="Right arrow" />
-      </button>
+    <main class="main">
+      <p class="main__heading">
+        CSS Day is a conference for developers who love beautiful websites.
+      </p>
+      <p class="sub__heading">4-8 June 2023</p>
+      <div class="button-container">
+        <button class="button button_primary">
+          Buy Tickets
+          <img
+            src="./icon/arrow-right.svg"
+            alt="Right arrow"
+            class="button-icon"
+          />
+        </button>
+        <button class="button button_secondary">Contact us</button>
+      </div>
     </main>
   </body>
 </html>
