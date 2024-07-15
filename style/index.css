@@ -3,11 +3,31 @@
 .main {
   padding: 150px;
 }
-.main__heading {
+.home.main__heading {
   font-size: 128px;
   font-weight: bold;
 }
-.sub__heading {
+.home.sub__heading {
   font-size: 40px;
   font-weight: bold;
+}
+.menu path {
+  fill: var(--color-text-primary);
+}
+.close path {
+  fill: var(--color-text-primary);
+}
+
+@media (max-width: 1220px) {
+  .home.main__heading {
+    font-size: 70px;
+  }
+}
+@media (max-width: 590px) {
+  .home.main__heading {
+    font-size: 40px;
+  }
+  .home.sub__heading {
+    font-size: 24px;
+  }
 }
