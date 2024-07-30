@@ -50,7 +50,7 @@ nav a:hover {
 
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 10;
     width: 300px;
     background-color: black;
@@ -66,8 +66,18 @@ nav a:hover {
   .close-sidebar-button {
     display: block;
     padding: 20px;
+    margin-left: auto;
   }
   #sidebar-active:checked ~ .links-container {
     display: flex;
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
   }
 }
